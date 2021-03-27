@@ -1,2 +1,3 @@
-# web-development
-This repository contains self-learning full-stack development stuff
+# Web Dev
+
+This repository contains self-learning full-stack development stuff!
