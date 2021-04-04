@@ -14,12 +14,16 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.styl/,
+          test: /\.styl$/,
           use: [
-            "style-loader",
-            "css-loader",
             {
-              loader: "stylus-loader",
+              loader: "style-loader",
+            },
+            {
+              loader: "css-loader",
+            },
+            {
+              loader: "stylus-loader", // compiles Styl to CSS
             },
           ],
         },

@@ -1,4 +1,4 @@
-let Fuse = require('fuse.js');
+const Fuse = require('fuse.js');
 let css = require('./Selectize.styl');
 
 let fuseConfig = {
@@ -58,7 +58,7 @@ module.exports = class Selector {
     if (this.inputValue === ""){
       return this.books;
     }
-    let fuse = new Fuse(this.books, fuseConfig);
+    const fuse = new Fuse(this.books, fuseConfig);
     return fuse.search(this.inputValue);
   }
   

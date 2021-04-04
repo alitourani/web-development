@@ -3,7 +3,7 @@ Selectize = require('./Selectize');
 let books = require('./books');
 
 var logger = function (newInputValue, e) {
-  console.log(newInputValue);
+  console.log('Input:', newInputValue);
 }
 
 Selectize = new Selectize(document.body, css.mainContainer, "Search books ...", books, logger);
